@@ -2,43 +2,58 @@
 <html>
 <head>
     <title>Education | Yan Xiaoying</title>
+    <link rel="stylesheet" href="style.css">
     <style>
+      @import url('https://fonts.cdnfonts.com/css/milkipa');
         #back {
-            color: dimgray;
+            color: white;
             background-color: transparent;
             width: 100%;
             height: 100%;
             text-align: center;
+            background-image: none;
+        }
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            width: 1400px;
         }
         a:link, a:visited {
-            background-color: lavender;
+            background-image: radial-gradient(white, lavender, transparent 70%);
             text-decoration: none;
-            width: 400px;
-            height: 60px;
+            width: 900px;
+            height: 150px;
             display: block;
         }
         a:hover, a:active {
-            background-color: plum;
+            background-image: radial-gradient(plum, lavender, transparent 70%);
             color: white;
         }
         h1 {
-            color: plum;
+            color: white;
+            text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
             text-align: center;
             margin: 40px 100px 40px 100px;
-            font-size: 50px;
+            font-size:70px;
+            font-weight: 800;
         }
         h2 {
-            margin: 20px auto;
-            width: 400px;
+            margin: 50px auto;
+            width: 900px;
             text-align:center;
             vertical-align: middle;
-            line-height: 60px;
+            line-height: 150px;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
         }
         div {
             text-align: center;
         }
         p {
-            color:dodgerblue;
+            color:white;
             text-align: center;
         }
         footer {
@@ -47,6 +62,7 @@
     </style>
 </head>
 <body>
+    <div class="center">
     <h1>Education</h1>
     <div>
          <a id="back" href="experience.html" title="Back">Back</a>
@@ -57,11 +73,9 @@
         <h2><a href="https://www.nus.edu.sg/" target="_blank" title="National University of Singapore">
             National University of Singapore</a></h2>
     </div>
-    <footer>
-        <hr>
-        <p onclick="alert('Coming soon');">
-        Learn more about me!
-        </p>
-  </footer> 
+    <p onclick="alert('Please email alicexiaoying1129@gmail.com!');">
+        Have questions?
+    </p>
+</div>
 </body>
 </html>
