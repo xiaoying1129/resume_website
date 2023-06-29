@@ -1,8 +1,84 @@
-html { 
+body { 
     background: url(background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Milkipa', sans-serif;
-  }
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 1400px;
+}
+  
+a:link, a:visited {
+    background-image: radial-gradient(white, lavender, transparent 70%);
+    text-decoration: none;
+    width: 450px;
+    height: 150px;
+    display: block;
+}
+  
+a:hover, a:active {
+    background-image: radial-gradient(plum, lavender, transparent 70%);
+    color: white;
+}
+  
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+    font-size:60px;
+    font-weight: 800;
+}
+  
+h2 {
+    margin: 25px auto;
+    width: 450px;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 150px;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
+}
+  
+p {
+    color:white;
+    text-align: center;
+}
+  
+span {
+    text-decoration: underline;
+}
+
+div {
+    text-align: center;
+}
+
+#home {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: none;
+}
+
+#back {
+  color: white;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-image: none;
+}
+
+footer {
+  margin: 50px auto;
+}
