@@ -3,16 +3,24 @@
 <head>
     <title>Home | Yan Xiaoying</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <style>
       @import url('https://fonts.cdnfonts.com/css/milkipa');
     </style>
 </head>
 <body>
   <div class="center">
-    <h1>Hello There</h1>
+    <div class="hello">
+      <span>H</span>
+      <span>e</span>
+      <span>l</span>
+      <span>l</span>
+      <span>o</span>
+      <span>!</span>
+    </div>
 
     <h1 style="font-weight: 400; font-size: 30px;">I'm Xiaoying</h1>
-    <h1 style="font-weight: 400; padding-bottom: 60px; font-size: 30px;">Welcome to my personal website</h1>
+    <h1 style="font-weight: 400; font-size: 30px;">Welcome to my personal website</h1>
 
     <div>
     <h2><a href="experience.html" title="Experience">Learn more about me!</a></h2>
@@ -20,9 +28,19 @@
     <h2><a href="contacts.html" title="Contacts">Contact me!</a></h2>
     </div>
 
-    <p onclick="alert('Please email alicexiaoying1129@gmail.com!');">
+    <button data-modal-target="#modal">
         Have questions?
-    </p> 
+    </button> 
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Have questions?</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Please email alicexiaoying1129@gmail.com if you have any questions!
+      </div>
+    </div>
+    <div id="overlay"></div>
   </div>
 </body>
 </html>

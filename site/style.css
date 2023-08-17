@@ -3,8 +3,12 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; 
     font-family: 'Milkipa', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .center {
@@ -52,10 +56,6 @@ p {
     color:white;
     text-align: center;
 }
-  
-span {
-    text-decoration: underline;
-}
 
 div {
     text-align: center;
@@ -82,3 +82,168 @@ div {
 footer {
   margin: 50px auto;
 }
+
+.fade-in-image {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+  
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hello {
+    color: white;
+    text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+    font-size:70px;
+    font-weight: 800;
+}
+
+span{
+    animation: mover 4s linear infinite;
+    display: inline-block;
+}
+
+@keyframes mover {
+    0%{
+        text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
+      }
+    50%{
+        text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
+        transform: translateY(25px);
+      }
+    100%
+      {
+        text-shadow: 1px 1px 2px lavender, 0 0 1em plum, 0 0 0.2em lavender;
+      }
+}
+
+span:nth-child(1)
+{
+    animation-delay: 0.5s;
+}
+span:nth-child(2)
+{
+    animation-delay: 1s;
+}
+span:nth-child(3)
+{
+    animation-delay: 1.5s;
+}
+span:nth-child(4)
+{
+    animation-delay: 2s;
+}
+span:nth-child(5)
+{
+    animation-delay: 2.5s;
+}
+span:nth-child(6)
+{
+    animation-delay: 3s;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Milkipa', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: lavender;
+    color: purple;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 40px 50px;
+    font-size: 1.25rem;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
