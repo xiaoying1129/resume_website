@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Home | Yan Xiaoying</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <style>
-      @import url('https://fonts.cdnfonts.com/css/milkipa');
-    </style>
+  <title>Home | Yan Xiaoying</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/milkipa');
+  </style>
 </head>
+
 <body>
   <div class="center">
     <div class="hello">
@@ -23,24 +25,41 @@
     <h1 style="font-weight: 400; font-size: 30px;">Welcome to my personal website</h1>
 
     <div>
-    <h2><a href="experience.html" title="Experience">Learn more about me!</a></h2>
+      <h2><a href="about.html" title="More About Me">Learn more about me!</a></h2>
 
-    <h2><a href="contacts.html" title="Contacts">Contact me!</a></h2>
+      <h2><a href="contacts.html" title="Contacts">Contact me!</a></h2>
     </div>
 
     <button data-modal-target="#modal">
-        Have questions?
-    </button> 
+      Have questions?
+    </button>
     <div class="modal" id="modal">
       <div class="modal-header">
         <div class="title">Have questions?</div>
         <button data-close-button class="close-button">&times;</button>
       </div>
       <div class="modal-body">
-        Please email alicexiaoying1129@gmail.com if you have any questions!
+        Please email yxiaoying1129@gmail.com if you have any questions!
       </div>
     </div>
     <div id="overlay"></div>
   </div>
+  <script id="__bs_script__">//<![CDATA[
+    (function () {
+      try {
+        var script = document.createElement('script');
+        if ('async') {
+          script.async = true;
+        }
+        script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.1'.replace("HOST", location.hostname);
+        if (document.body) {
+          document.body.appendChild(script);
+        }
+      } catch (e) {
+        console.error("Browsersync: could not append script tag", e);
+      }
+    })()
+    //]]></script>
 </body>
+
 </html>
